@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<title>Curry DO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://i.postimg.cc/C5VpWfD0/testf.jpg");
+  
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open from 11:30AM to 8:30PM</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Curry<br>DO</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">5300 Beach Blvd, Buena Park, CA 90621</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About</span></h5>
+    <p><strong>Hours:</strong> 11:30AM - 8:30PM</p>
+    <p><strong>Address:</strong> 5300 Beach Blvd, Buena Park, CA 90621</p>
+    <p><strong>Phone:</strong> (714) 735-8750</p>
+    <br>
+    <b>No-contact delivery · Delivery · Takeout</b>
+    <br><br><br>
+    <b>Order:</b><br><br>
+    <a href="https://postmates.com/merchant/aa837907-1b86-4b0c-a756-14153739dc3c">Postmates</a><br>
+    <a href="https://www.ubereats.com/orange-county/food-delivery/curry-do/JYWN4_5ZShC1n-Gms5AUCA/?utm_source=google&utm_medium=organic&utm_campaign=place-action-link">Ubereats</a><br>
+    <a href="https://www.grubhub.com/restaurant/curry-do-5300-beach-blvd-suite-108-buena-park/2371226?utm_source=google&utm_medium=organic&utm_campaign=place-action-link">Grubhub</a><br>
+    <a href="https://www.seamless.com/menu/curry-do-5300-beach-blvd-suite-108-buena-park/2371226?utm_source=google&utm_medium=organic&utm_campaign=place-action-link">Seamless</a><br>
+    
+    <br><br><br>
+    <a style="color:red; text-decoration:none;" href="https://www.yelp.com/biz/curry-do-buena-park-6">Yelp Reviews</a>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>This place is very surprising. Curry is one of those dishes where pictures do not do it justice. This restaurant shares the Japanese appreciation of curry with the Korean appreciation for meat.  The curry was perfectly balanced. Super umami with a balance of light sweetness. After my first bite, I purposely ate smaller scoops just so I can enjoy every bite. It's that's good!
+<br><br>
+The beef was perfectly seasoned with a nice black pepper flavor that goes really well with the curry. 4.5/5
+<br><br>
+This restaurant is brave for opening during COVID-19. I hope you guys stays strong because I see myself introducing this place to friends and coming here often.</i>
+    </div>
+    
+    
+     <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>This  spot was clean, covid-19 concious, respectful employees and the food was delicious!
+<br><br>
+Will definitely be back! </i>
+    </div>
+    
+    
+    
+     <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Came here during their soft opening and I honestly think their beef belly curry was one of the best Japanese curry dishes I have ever tried. With adding a little bit of their spicy powder, the curry flavor was just the right amount of spicy, sweet, and savory. The beef was also so tender and soft. The portion was perfect for a single lunch meal. I finished my entire plate clean and was left feeling completely satisfied. The staff was very attentive and the restaurant was very clean and sanitary, especially with covid. Definitely will be back here as it's not too far from my house!</i>
+    </div>
+    
+    
+    
+    
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+     
+      <h5>Pork Belly Curry</h5>
+      <p class="w3-text-grey">Braised pork belly served with rice and curry topped with green onions. Red pickled radish, tempura flakes, and cayenne pepper served on the side. <br>$17.90</p><br>
+    
+      <h5>Chicken Katsu Curry</h5>
+      <p class="w3-text-grey">Breaded and fried chicken cutlet served with rice and curry topped with green onions. Red pickled radish, tempura flakes, and cayenne pepper served on the side. <br>$16.60</p><br>
+    
+      <h5>Beef Belly Curry</h5>
+      <p class="w3-text-grey">Thinly sliced beef belly served with rice and curry topped with green onions. Red pickled radish, tempura flakes, and cayenne pepper served on the side. <br>$16.60</p><br>
+    
+      <h5>Shrimp Tempura Curry</h5>
+      <p class="w3-text-grey">Tempura fried shrimp tempura (3pc) served with rice and curry topped with green onions. Red pickled radish, tempura flakes, and cayenne pepper served on the side.<br> $17.90</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Matcha Tea</h5>
+      <p class="w3-text-grey">Ceremonial matcha tea.<br>  $6.75</p><br>
+    
+      <h5>Matcha Latte</h5>
+      <p class="w3-text-grey">Light & creamy iced green tea latte made with ceremonial matcha. <br> $7.15</p><br>
+    
+      <h5>Strawberry Milk</h5>
+      <p class="w3-text-grey">Sweet & creamy strawberry milk served cold. <br> $7.15</p><br>
+    
+      <h5>UCC Milk Coffee</h5>
+      <p class="w3-text-grey">$3.25</p><br>
+    
+      <h5>Oolong Tea</h5>
+      <p class="w3-text-grey">$3.25</p>
+    </div>  
+   
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
+    <p>Find us at 5300 Beach Blvd, Buena Park, CA 90621.</p>
+    <img src="https://i.postimg.cc/C5VpWfD0/testf.jpg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Copyright &#169; Curry DO<br><br>All Rights Reserved</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
